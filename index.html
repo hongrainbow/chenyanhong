@@ -1,65 +1,67 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Chenyanhong : ">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Chenyanhong</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="http://www.xxsy.net/">View on 潇湘书院</a>
-
-          <h1 id="project_title">烈缺</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-            </section>
-        </header>
+<head lang="zh-CN">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" media="all" href="./css/blog.css" />
+  <script src="./build/react.js"></script>
+  <script src="./build/JSXTransformer.js"></script>
+  <script src="./jquery/jquery-1.11.2.min.js"></script>
+  <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <title></title>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="tabbable"> <!-- Only required for left/right tabs -->
+    <ul id="myTab" class="nav nav-tabs navbar-fixed-top navbar-inverse">
+      <li class="active"><a href="#tab1" data-toggle="tab" aria-controls="tab1">首页</a></li>
+      <li><a href="#tab2" data-toggle="tab" aria-controls="tab2">慢生活</a></li>
+      <li><a href="#tab3" data-toggle="tab" aria-controls="tab3">技术探讨</a></li>
+      <li><a href="#tab4" data-toggle="tab" aria-controls="tab4">作品展示</a></li>
+      <li><a href="#tab5" data-toggle="tab" aria-controls="tab5">留言板</a></li>
+    </ul>
+  </div>
+<div id="myTabContent" class="tab-content">
+  <div role="tabpanel" class="tab-pane fade active in" id="tab1" aria-labelledby="home-tab">
+  <div id="sign">
+    <div class="signing">
+      <p class="sign-title">CUC 38# 229 We Four</p>
+      <p class="sign-smtitle">email：aissachenyanhong@gmail.com</p>
     </div>
+  </div>
+  <div class="photocollect">
+    <div class="photoshow" ><a><img src="./img/img1.jpg" id="photo1"></a></div>
+    <div class="photoshow" ><a><img src="./img/img2.jpg" id="photo2"></a></div>
+    <div class="photoshow" ><a><img src="./img/img3.jpg" id="photo3"></a></div>
+  </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>个人简介</h3>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="tab2" aria-labelledby="profile-tab">
 
-<p>可男可女可人妖</p>
-<p>可攻可受可调教</p>
-<p>深度基腐宅，二次元爱好者，重度声控</p>
-<p>能写小说能写代码</p>
-<p>PS：网站还在优化中，等我放假再整，现在有点粗糙</p>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="tab3" aria-labelledby="dropdown1-tab">
+    <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="tab4" aria-labelledby="dropdown2-tab">
+    <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="tab5" aria-labelledby="dropdown2-tab">
+    <p>有待添加！！！</p>
+  </div>
+</div>
+</div>
+<script type="text/javascript">
+  $('#myTab a').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  })
+  $('#myTab a[href="#tab2"]').tab('show') // Select tab by name
+  $('#myTab a:first').tab('show') // Select first tab
+  $('#myTab a:last').tab('show') // Select last tab
+  $('#myTab li:eq(0) a').tab('show') // Select third tab (0-indexed)
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>作品</h3>
-
-<p>《凤勾情之腹黑药妃》</p>
-<p>内容简介</p>
-<p>这其实不重要，我就是写来玩玩的</p>
-
-
-
-
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright"> maintained by <a href="https://github.com/hongrainbow">hongrainbow</a></p>
-        <p>烈缺  <a href="http://www.xxsy.net/">潇湘书院</a></p>
-      </footer>
-    </div>
-
-
-
-  </body>
+</script>
+</body>
 </html>
